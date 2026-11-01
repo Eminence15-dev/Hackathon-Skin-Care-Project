@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  min-height: 100px;
+  padding: 25px 10%;
+  background: #fff;
+}
+
+.footer-brand {
+  font-size: 19px;
+}
+
+.footer-brand .brand-icon {
+  width: 30px;
+  height: 30px;
+}
+
+footer > p,
+.footer-copy {
+  color: #92958d;
+  font-size: 11px;
+}
+
+@media (max-width: 650px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}

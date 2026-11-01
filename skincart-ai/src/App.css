@@ -1,0 +1,112 @@
+.app {
+  width: 100%;
+  overflow: hidden;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -1.2px;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 12px;
+  background: #e9eee6;
+  color: #71876b;
+}
+
+.brand-accent {
+  color: #82977a;
+}
+
+.ai-label {
+  padding: 4px 6px;
+  border-radius: 5px;
+  background: #eee9f5;
+  color: #8d78a4;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #829477;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 21px;
+  border: none;
+  border-radius: 8px;
+  background: #788c70;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.primary-button:hover {
+  background: #657b5d;
+  transform: translateY(-2px);
+}
+
+.primary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  margin: 10px 0 8px;
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #898b84;
+  font-size: 13px;
+}
+
+.step-label,
+.coming-soon {
+  color: #929a89;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 650px) {
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .section-heading h2 {
+    font-size: 29px;
+  }
+}
